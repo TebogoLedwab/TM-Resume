@@ -1,0 +1,48 @@
+.dashboard {
+    // background-color: pink;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    .dashboard-intro {
+        height: 30vh;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            display: flex;
+            margin-top: 10%;
+            // float: left;
+        }
+        // background-image: image(), url("../../../assets/images/dashboard.svg")
+        .dash {
+            display: block;
+            margin-top: 10%;
+            
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+        
+          .col {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            //height: 300px; /* Should be removed. Only for demonstration */
+          }
+
+          .intro {
+            text-align: center;
+            //display: grid;
+            margin: auto;
+            width: 640px; 
+            padding: 50px;
+            font-family: 'Lexend Deca', sans-serif; 
+            // color: #2E475D; 
+          }
+    }
+}
+
