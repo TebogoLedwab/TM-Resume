@@ -1,14 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "animate.css/animate.min";
-
-
-@import "bootswatch/dist/cyborg/variables";
-@import "bootswatch/dist/cyborg/bootswatch";
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
-// @tailwind base;
-// @tailwind components;
-// @tailwind utilities;
+@import 'material-icons/iconfont/material-icons.css';
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "@fontsource/roboto";
+// @import "@fontsource/roboto/700.css";

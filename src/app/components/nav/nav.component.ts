@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { DashboardComponent } from "../../pages/dashboard/dashboard.component";
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
     selector: 'app-nav',
-    standalone: true,
     templateUrl: './nav.component.html',
     styleUrl: './nav.component.scss',
-    imports: [DashboardComponent]
 })
 export class NavComponent {
-
+    faCoffee = faCoffee;
 }

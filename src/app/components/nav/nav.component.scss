@@ -1,9 +1,16 @@
-.bg-light {
-    background-color: #eeeeee00 !important;
-}
-
 nav {
     position: fixed;
     width: 100%;
     z-index: 10;
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+}
+
+a {
+    color: #646464 !important;
+    font-weight: 400;
 }
