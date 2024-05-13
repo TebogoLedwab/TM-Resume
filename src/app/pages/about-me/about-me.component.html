@@ -1,1 +1,49 @@
-<p>about-me works!</p>
+<div #about class="about-me">
+    <div class="about-me-body">
+        <div class="container">
+            <h1 class="typewriter">About Me.</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+
+                <!--   *******  Experience Section Starts  *******  -->
+
+                <div class="col">
+                    <h2 class="title">EXPERIENCE</h2>
+                    <div class="contents">
+                        @for (exp of experience; track exp.id) {
+                        <div class="card box">
+                            <div class="card-body">
+                                <h4 class="card-title">{{ exp.role}}</h4>
+                                <h6 class="card-subtitle mb-2 text-muted">{{ exp.years}} <br />{{ exp.companyName}}
+                                </h6>
+                                <p class="card-text">{{ exp.jobDescription }}</p>
+                            </div>
+                        </div>
+                        }
+
+                    </div>
+                </div>
+
+
+                <!--   *******  Education Section Starts  *******   -->
+
+                <div class="col">
+                    <h2 class="title">EDUCATION</h2>
+                    <div class="contents">
+
+                        @for( ed of education; track ed.id) {
+                        <div class="card box">
+                            <div class="card-body">
+                                <h4 class="card-title">{{ed.qualification}}</h4>
+                                <h6 class="card-subtitle mb-2 text-muted">{{ed.schoolName}}</h6>
+                                <p class="card-text">{{ed.years}}</p>
+                            </div>
+                        </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

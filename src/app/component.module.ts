@@ -5,25 +5,31 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatIconModule } from '@angular/material/icon';
+import { RouterOutlet, RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
+import { AboutMeComponent } from './pages/about-me/about-me.component';
 
 @NgModule({
   declarations: [
     NavComponent,
     DashboardComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    AboutMeComponent
   ],
   imports: [
     CommonModule,
     FontAwesomeModule,
-    MatIconModule
+    MatIconModule,
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive,
+    RouterModule.forRoot([])
   ],
-  providers: [
-
-  ],
+  providers: [],
   exports: [
     NavComponent,
     DashboardComponent,
     ContactMeComponent,
+    AboutMeComponent,
     MatIconModule
   ]
 })

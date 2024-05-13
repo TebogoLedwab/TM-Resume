@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { RouterOutlet } from '@angular/router';;
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';;
 import { ComponentsModule } from './component.module';
 
 @NgModule({
@@ -11,6 +11,8 @@ import { ComponentsModule } from './component.module';
     imports: [
         BrowserModule,
         RouterOutlet,
+        RouterLink,
+        RouterLinkActive,
         ComponentsModule,
     ],
     providers: [],

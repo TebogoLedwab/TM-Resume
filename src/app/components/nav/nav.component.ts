@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
     selector: 'app-nav',
@@ -7,5 +6,33 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
     styleUrl: './nav.component.scss',
 })
 export class NavComponent {
-    faCoffee = faCoffee;
+    constructor (){}
+
+    scrollTo (to: string) {
+        switch (to) {
+          case 'home':
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth',
+            });
+            break;
+    
+          case 'about-me':
+            document.querySelector('.about-me-body')?.scrollIntoView({
+                behavior: 'smooth',
+            });
+            // document.querySelector('.about-me-body').scrollIntoView({
+            //   behavior: 'smooth',
+            // });
+            break;
+    
+          default:
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth',
+            });
+            break;
+        }
+      }
+    
 }

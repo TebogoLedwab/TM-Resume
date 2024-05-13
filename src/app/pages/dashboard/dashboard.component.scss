@@ -32,6 +32,7 @@
       font-size: 3.1rem;
       font-weight: 400;
       font-family: 'Roboto', sans-serif;
+      display: inline-block;
     }
 
     img {
@@ -83,8 +84,8 @@
       white-space: nowrap;
       margin: 0 auto;
       letter-spacing: .15em;
-      animation: typing 3.5s steps(30, end),
-        blink-caret .5s step-end infinite;
+      animation: typing 2s steps(19),
+        blink-caret .4s step-end infinite alternate;
 
     }
 
@@ -111,5 +112,14 @@
         border-color: #538D69
       }
     }
+  }
+}
+
+@media(max-width: 768px){
+  .dashboard{
+    grid-template-columns: 1fr;
+  }
+  .dashboard:nth-child(2){
+    margin-top: 30px;
   }
 }

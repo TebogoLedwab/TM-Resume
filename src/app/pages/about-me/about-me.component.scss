@@ -1,0 +1,90 @@
+.about-me {
+  height: 100vh;
+
+  h1 {
+    color: #538D69;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    padding-top: 1.2rem;
+    padding: 4.5rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+  // .container{
+  //   width: 100%;
+  //   padding: 25px;
+  // }
+
+// .row{
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-column-gap: 20px;
+//   }
+
+  .col .title{
+    font-family: helvetica;
+    color: #538D69;
+    padding: 0px 0px 20px 30px;
+  }
+
+  .col .contents{
+    padding: 0px 30px;
+    border-left: 2px solid #bababa;
+  }
+  
+
+  .col .contents .box{
+    position: relative;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+    height: 18vh;
+  }
+
+  .col .contents .box:hover{
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 1px solid transparent;
+  }
+
+  .col .contents .box::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 24px);
+    top: 0;
+    background-color: #538D69;
+    border: 2px solid white;
+  }
+
+  .card-title {
+    position: relative;
+    color: #538D69;
+  }
+
+  .card-subtitle {
+    font-size: 19px;
+    padding: 10px 0px 6px;
+    font-family: helvetica;
+    color: #444;
+  }
+
+  .card-text {
+    line-height: 1.2;
+    color: #666;
+    font-size: 17px;
+  }
+
+  @media(max-width: 768px){
+    .row{
+      grid-template-columns: 1fr;
+    }
+    .row .col:nth-child(2){
+      margin-top: 30px;
+    }
+  }
+}
