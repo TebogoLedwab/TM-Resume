@@ -22,6 +22,14 @@
 //     grid-column-gap: 20px;
 //   }
 
+.show-less {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
   .col .title{
     font-family: helvetica;
     color: #538D69;

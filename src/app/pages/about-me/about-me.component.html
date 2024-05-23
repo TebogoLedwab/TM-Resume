@@ -17,7 +17,15 @@
                                 <h4 class="card-title">{{ exp.role }}</h4>
                                 <h6 class="card-subtitle mb-2 text-muted">{{ exp.years }} <br /> <strong>{{ exp.companyName }}</strong>
                                 </h6>
-                                <p class="card-text">{{ exp.jobDescription }}</p>
+                                <p  #textbox [class.show-less]="expand === false" class="card-text">
+
+                                    {{ exp.jobDescription }}
+                                    <a (click)="toggle()">
+                                        @if(textbox.offsetHeight < textbox.scrollHeight ) {
+                                            <a>{{ anchor }}</a>
+                                        }
+                                </a>
+                                </p>
                             </div>
                         </div>
                         }

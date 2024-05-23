@@ -115,11 +115,11 @@
   }
 }
 
-@media(max-width: 768px){
-  .dashboard{
-    grid-template-columns: 1fr;
-  }
-  .dashboard:nth-child(2){
-    margin-top: 30px;
-  }
-}
+// @media(max-width: 768px){
+//   .dashboard{
+//     grid-template-columns: 1fr;
+//   }
+//   .dashboard:nth-child(2){
+//     margin-top: 30px;
+//   }
+// }

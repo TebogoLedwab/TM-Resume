@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChange } from '@angular/core';
 
 interface Experience {
   id: number;
@@ -25,6 +25,9 @@ export class AboutMeComponent {
 
   constructor() { }
 
+  expand: boolean = false;
+  anchor: string = 'Read more';
+
   readonly experience: Experience[] = [
     {
       id: 1,
@@ -32,7 +35,7 @@ export class AboutMeComponent {
       role: "UI/UX Developer",
       years: "Present",
       location: "Johanessburg, Gauteng",
-      jobDescription: "wertyuiokijhgfdcfvgbhnjmnbvcxsdertyuiolkjhgfdxcvbn"
+      jobDescription: "Design, development, testing, and maintenance of web applications using Blazor .NET 7, HTML, Bootstrap 5 and C#. Use Azure DevOps to assign, maintain tickets and allocate story points. Create database object model using Entity Framework. Modify existing SQL stored procedures according to the requirement with SQL Server Management Studio 19. Participate in agile software development lifecycle by giving input into prioritisation, estimates, planning, retrospectives, and code reviews. Optimize SQL queries for data retrieval with Microsoft SQL Server. Making use of Azure DevOps to track and test existing code."
     },
     {
       id: 2,
@@ -74,5 +77,11 @@ export class AboutMeComponent {
       years: "Jan 2016 - Dec 2017"
     },
   ]
+
+  
+  toggle() {
+    this.expand = !this.expand;
+    this.anchor = this.expand ? 'Show less' : 'Read more';
+  }
 
 }
