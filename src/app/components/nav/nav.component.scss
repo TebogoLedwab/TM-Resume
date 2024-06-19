@@ -19,7 +19,11 @@ a {
     cursor: pointer;
 }
 
+.navbar {
+    transition: all 0.5s;
+}
+
 .navbar-scrolled {
-    background-color: rgba(207, 207, 207, 0.484);
+    background-color: rgba(224, 224, 224, 0.484);
     box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 }

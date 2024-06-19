@@ -17,7 +17,7 @@ export class NavComponent implements OnInit {
       } else if (window.scrollY < 56) {
         navEl?.classList.remove('navbar-scrolled');
       }
-    })
+    });
   }
 
   scrollTo(to: string) {
